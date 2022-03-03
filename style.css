@@ -59,18 +59,18 @@ header {
   z-index: 10;
 
   background: #242d38;
-  border-bottom: 2px #efd592 solid;
+  border-bottom: 1px #efd592 solid;
 
   color: #efd592;
   text-transform: uppercase;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 599px) {
   .header-name {
     font-size: 16px;
   }
 }
-@media screen and (min-width: 481px) {
+@media screen and (min-width: 600px) {
   .header-name {
     font-size: 36px;
   }
@@ -78,4 +78,78 @@ header {
 
 .header-icon-container .material-icons {
   font-size: 24px;
+}
+
+.cards-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin: 80px auto 0;
+}
+
+.movie-card {
+  position: relative;
+  max-width: 420px;
+  margin: 90px 20px;
+  padding: 40px;
+
+  background-color: #efd592;
+
+  color: #242d38;
+}
+
+.number-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40px;
+  height: 40px;
+
+  background-color: #242d38;
+  border: 1px #efd592 solid;
+
+  font-size: 24px;
+  color: #efd592;
+}
+
+.movie-title {
+  font-size: 36px;
+  font-weight: 400;
+}
+
+.movie-sub {
+  padding-bottom: 15px;
+  font-size: 18px;
+  font-weight: 400;
+  border-bottom: 1px #242d38 solid;
+}
+
+.movie-text {
+  margin: 15px 0;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+button {
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: calc(100% - 80px);
+  height: 60px;
+
+  background-color: #242d38;
+  border: 1px #efd592 solid;
+  color: #efd592;
+}
+
+button:hover {
+  background-color: #efd592;
+  border: 1px #242d38 solid;
+  color: #242d38;
 }
